@@ -24,7 +24,7 @@ public class EMP {
 	Integer comm;
 	
 	@ManyToOne
-	@JoinColumn(name = "deptno")
+	@JoinColumn(name = "deptno", referencedColumnName = "deptno")
 	Dept dept;
 	
 }
